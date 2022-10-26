@@ -31,9 +31,10 @@ int sign(int a) {
     }
 }
 int main() {
-    int i = 13;
-    int j = 19;
-    int l = 14;
+    const int i0 = 13, j0 = 19, l0 = 14;
+    int i = i0;
+    int j = j0;
+    int l = l0;
     int chek = 0;
     for (int m = 1; m <= 50; ++m) {
         int ist = i;
@@ -46,9 +47,9 @@ int main() {
 
         if (i + j <= -10 && i + j >= -20 && chek == 0) {
             printf("Point reached the destanation\n");
-            printf("%d\n", i);
-            printf("%d\n", j);
-            printf("%d\n", m);
+            printf("i: %d\n", i);
+            printf("j: %d\n", j);
+            printf("m: %d\n", m);
             chek = 1;
         }
 
@@ -58,7 +59,7 @@ int main() {
         printf("Point  didnt reach the destanation\n");
     }
     printf("Last parameters of the point is:\n");
-    printf("%d\n", i);
-    printf("%d\n", j);
-    printf("%d\n", l);
+    printf("i: %d\n", i);
+    printf("j: %d\n", j);
+    printf("l: %d\n", l);
 }
